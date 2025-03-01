@@ -1,0 +1,31 @@
+kulcs ellenörzése:
+ls ~/.ssh
+
+kulcs létrehozása
+ssh-keygen -t ed25519 -C "teemail@example.com"
+real emailcím szükséges
+    ssh agent indítás
+        eval "$(ssh-agent -s)"
+    kulcs hozzáadása:
+        ssh-add ~/.ssh/id_ed25519
+    kulcs megnézés:
+        cat ~/.ssh/id_ed25519.pub
+github kulcs hozzáadása:
+profil->settings->SSH keys
+
+git config
+
+git init
+git add .
+git remote add origin https://github.com/FELHASZNÁLÓNÉV/REPO_NEV.git
+git commit -m "Első commit"  # vagy egy másik üzenet
+    Ha a commit nem sikerül valószínűleg nincs megadva a személyes adat
+        git config --global user.name "Saját Neved"
+        git config --global user.email "sajat.email@pelda.com"
+
+Main nevű branch létrehozása:
+    git branch -M main
+
+git push -u origin main
+
+git push
