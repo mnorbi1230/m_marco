@@ -23,8 +23,11 @@ git commit -m "Első commit"  mindenképp kell változtatás!!
         git config --global user.name "Saját Neved"
         git config --global user.email "sajat.email@pelda.com"
 
-Main nevű branch létrehozása:
+Main nevű branch létrehozása: 
     git branch -M main
+
+Branch váltás:
+    git checkout second_branch
 
 git push -u origin main
 
