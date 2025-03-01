@@ -18,7 +18,7 @@ git config
 git init
 git add .
 git remote add origin https://github.com/FELHASZNÁLÓNÉV/REPO_NEV.git
-git commit -m "Első commit"  # vagy egy másik üzenet
+git commit -m "Első commit"  mindenképp kell változtatás!!
     Ha a commit nem sikerül valószínűleg nincs megadva a személyes adat
         git config --global user.name "Saját Neved"
         git config --global user.email "sajat.email@pelda.com"
